@@ -1,0 +1,125 @@
+
+body {
+  width: 970px;
+  height: auto;
+}
+#header {
+  background: #F1F2EF;
+  background: -webkit-linear-gradient(#F1F2EF, #FFFFFF);
+  background: -moz-linear-gradient(#F1F2EF, #FFFFFF);
+}
+#maincontent {
+  width: 970px;
+  height: auto;
+  background: #3B334A;
+  background: -webkit-radial-gradient(#635153, #5C5370, #3B334A);
+  background: -moz-radial-gradient(#635153, #5C5370, #3B334A);
+
+}
+#description {
+  width: 420px;
+  height: 300px;
+  background: #DBCED0;
+  background: -webkit-linear-gradient(bottom right, #DBCED0, #E9F0F4);
+  background: -moz-linear-gradient(bottom right, #DBCED0, #E9F0F4);
+  vertical-align: top;
+  margin-top: 15px;
+  display: inline-block;
+}
+#logo {
+  color: #5D729A;
+  text-align:right;
+  margin-top:0px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  font-size: small;
+}
+.mainlogo {
+  width:460px;
+  height:285px;
+  border:7px solid #BFBFBF;
+  margin: 15px
+}
+.smallicon {
+  width:20px;
+  height:20px;
+  margin-top:5px;
+  margin-right:5px
+}
+.titlebar {
+  width: auto;
+  height: 33px;
+  background: #BFBCB8;
+  background: -webkit-linear-gradient(#BFBCB8, #8D8A96, #BFBCB8);
+  background: -moz-linear-gradient(#BFBCB8, #8D8A96, #BFBCB8);
+  padding-top: 7px;
+  margin: 0px;
+}
+.articles {
+  width: 220px;
+  height: 550px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+  vertical-align: top;
+  background: #9BA9C1;
+  background: -webkit-linear-gradient(left top, #9BA9C1, #E9ECF2);
+}
+.readmore {
+  color: white;
+  font-family: sans-serif;
+  font-size: small;
+  text-decoration: bold;
+  text-align: center;
+  background: #5D729A;
+  width: 100px;
+  height: 25px;
+  border: 3.5px solid black;
+  box-shadow: 2px 2px 2px black;
+  border-radius: 5px;
+  margin-left: 110px;
+  position:relative;
+}
+.icon {
+  width:220px;
+  height:120px
+}
+h2 {
+  text-align: right;
+  display: inline;
+  margin-left: 300px;
+  vertical-align: 20px;
+}
+h3 {
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+h4 {
+  text-align: left;
+  margin: 10px;
+}
+p {
+  margin-left: 10px;
+  margin-right: 15px;
+}
+ul {
+  height: auto;
+  border: 0.5px solid black;
+  margin: 0px;
+  background: #F1F2EF;
+  background: -webkit-linear-gradient(#F1F2EF, #FFFFFF);
+  background: -moz-linear-gradient(#F1F2EF, #FFFFFF);
+  list-style-type: none;
+}
+ul li {
+  margin: 0px;
+  border-right: 0.5px solid black;
+  padding-left:33px;
+  padding-right:33px;
+  padding-top:5px;
+  padding-bottom: 5px;
+  text-align: left;
+  display: inline-block;
+}
