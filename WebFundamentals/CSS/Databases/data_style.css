@@ -104,6 +104,13 @@ p {
   margin-left: 10px;
   margin-right: 15px;
 }
+.row {
+  background: #F1F2EF;
+  background: -webkit-linear-gradient(#F1F2EF, #FFFFFF);
+  background: -moz-linear-gradient(#F1F2EF, #FFFFFF);
+  padding: 1%;
+  border: 0px solid black;
+}
 ul {
   height: auto;
   border: 0.5px solid black;
