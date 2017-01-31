@@ -1,0 +1,53 @@
+$(document).ready(function(){
+  $('#show').click(function(){
+    $('p').show();
+  });
+  $('#hide').click(function(){
+    $('p').hide();
+  });
+  $('#toggle').click(function(){
+    $('p').toggle();
+  });
+  $('#slidedown').click(function(){
+    $('h1').slideDown();
+  });
+  $('#slideup').click(function(){
+    $('h1').slideUp();
+  });
+  $('#slidetoggle').click(function(){
+    $('h1').slideToggle();
+  });
+  $('#fadein').click(function(){
+    $('h2').fadeIn();
+  });
+  $('#fadeout').click(function(){
+    $('h2').fadeOut();
+  });
+  $('#fadetoggle').click(function(){
+    $('h2').fadeToggle();
+  });
+  $('#addclass').click(function(){
+    $('h2').addClass('fadingwords');
+  });
+  $('#before').click(function(){
+    $('h1').before('<h1>Greetings</h2>');
+  });
+  $('#after').click(function(){
+    $('h1').after('<h1>Farewell</h2>');
+  });
+  $('#append').click(function(){
+    $('ol').append('<li>Pineapples</li>');
+  });
+  $('#html').click(function(){
+    $('p:first').html('The <b>old</b> content has been replaced.');
+  });
+  $('#resize').click(function(){
+    $('img').attr('width','160px');
+  });
+  $('#name').click(function(){
+    $('input:text').val('Dawn Smith');
+  });
+  $('#settext').click(function(){
+    $('h2').text('Replaced with text');
+  });
+});
