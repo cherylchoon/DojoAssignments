@@ -1,0 +1,13 @@
+table {
+  border: 1px solid black;
+}
+h1 {
+  padding-top: 40px;
+  border-bottom: 1px solid black;
+}
+p {
+  text-align: right;
+}
+#userform {
+  width: 350px;
+}

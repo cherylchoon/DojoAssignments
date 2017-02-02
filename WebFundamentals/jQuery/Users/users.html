@@ -2,21 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="users.css">
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script type='text/javascript' src='users.js'></script>
     <title>Advanced jQuery Users</title>
   </head>
-  <style>
-  table {
-    border: 1px solid black;
-  }
-  h1 {
-    margin: 0px;
-    border-bottom: 1px solid black;
-  }
-  </style>
   <body>
-    <table>
+    <table id="userdetail">
     <thead>
     <tr>
       <th>First Name</th>
@@ -28,8 +20,15 @@
     <tbody>
     </tbody>
     </table>
-    <div>
+    <div id='userform'>
     <h1>Add User</h1>
+    <p>First Name: <input id="test1" type="text" name="first_name" value="First Name"></p>
+    <p>Last Name: <input id="test2" type="text" name="last_name" value="Last Name"></p>
+    <p>Email Address: <input id="test3" type="text" name="email" value="Email Address"></p>
+    <p>Contact No.: <input id="test4" type="text" name="number" value="Phone #"></p>
 
+    <input type="submit" value="Add User" id="submit"/>
+
+    </div>
   </body>
 </html>
