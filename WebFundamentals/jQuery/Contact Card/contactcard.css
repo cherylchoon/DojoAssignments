@@ -1,0 +1,13 @@
+#user {
+  width: 200px;
+  height: auto;
+  display: inline-block;
+}
+#usercontact {
+  width: 200px;
+  height: auto;
+}
+textarea {
+  display: block;
+  margin: 10px 10px 10px 0px;
+}

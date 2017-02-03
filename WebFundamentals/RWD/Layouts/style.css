@@ -1,0 +1,23 @@
+#header {
+  background-color: grey;
+}
+
+#navigation ul {
+  padding: 0px;
+}
+#navigation ul li {
+  background-color: grey;
+  border: 1px solid black;
+  list-style-type: none;
+  display: inline-block;
+}
+.content, #lastcontent {
+  height: auto;
+  width: 24%;
+  display: inline-block;
+}
+@media only screen and (max-width: 680px) {
+    #navigation { display:none;}
+    .content { width: 30%;}
+    #lastcontent { width: 100%;}
+}
