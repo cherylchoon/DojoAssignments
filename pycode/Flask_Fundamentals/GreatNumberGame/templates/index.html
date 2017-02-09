@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Great Number Game</title>
+  </head>
+  <body>
+
+    <center>
+
+    <h1>Welcome to the Great Number Game!</h1>
+    <h3>I am thinking of a number between 1 and 100</h3>
+    <h3>Take a guess!</h3>
+
+    <form action='/authentication' method='POST'>
+    <input type="text" name="number" value="">
+    <input type="submit" name="submit" value="Submit!">
+    </form>
+
+    {% if session.trial == "correct" %}
+    <div class="messagebox">
+      <h1>{{session.guess}} was the number</h1>
+      <form action='/reset' method='POST'>
+      <input type="submit" name="playagain" value="Play Again!">
+      </form>
+
+    </div>
+
+    {% elif session.trial == "low" %}
+    <div class="messagebox">
+      <h1>Too Low!</h1>
+    </div>
+
+    {% elif session.trial == "high" %}
+    <div class="messagebox">
+      <h1>Too High!</h1>
+    </div>
+    {% endif %}
+
+
+
+
+    </center>
+  </body>
+</html>

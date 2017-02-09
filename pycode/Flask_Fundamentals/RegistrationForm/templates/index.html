@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+  </head>
+  <body>
+    <style>
+      label, input{
+        margin: 5px;
+      }
+    </style>
+    <h1>Registration</h1>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <p><font color="red"><i>{{message}}</i></font></p>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <form action='/process' method='post'>
+      <label>Email: </label><input type="text" name="email" value=""><br>
+      <label>First Name: </label><input type="text" name="first_name" value=""><br>
+      <label>Last Name: </label><input type="text" name="last_name" value=""><br>
+      <label>Password: </label><input type="password" name="password" value=""><br>
+      <label>Confirm password: </label><input type="password" name="confirm_password" value=""><br>
+      <input type="submit" name="submit" value="Submit!">
+    </form>
+
+  </body>
+</html>

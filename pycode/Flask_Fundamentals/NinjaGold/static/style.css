@@ -1,0 +1,18 @@
+.building {
+  width: 20%;
+  height: 300px;
+  border: 5px solid black;
+  margin-left: 2%;
+  text-align: center;
+  display: inline-block;
+}
+.activities {
+  width: 89.8%;
+  height: 150px;
+  margin-left: 2%;
+  border: 2px solid black;
+  overflow: scroll;
+}
+#activity {
+  color: black;
+}

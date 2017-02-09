@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NINJA</title>
+  </head>
+  <body>
+    {% if color == 'blue' %}
+      <img src="/static/leonardo.jpg">
+    {% elif color == 'orange' %}
+      <img src="/static/michelangelo.jpg">
+    {% elif color == 'purple' %}
+      <img src="/static/donatello.jpg">
+    {% elif color == 'red' %}
+      <img src="/static/raphael.jpg">
+    {% else %}
+      <img src="/static/notapril.jpg">
+    {% endif %}
+
+  </body>
+</html>
