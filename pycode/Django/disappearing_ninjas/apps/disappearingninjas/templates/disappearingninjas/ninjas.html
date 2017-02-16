@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NINJAS</title>
+    <style>
+      button {
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 1.6em;
+        background-color: black;
+        border-radius: 5%;
+        border: 0px;
+        box-shadow: 2px 2px 2px grey;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      {% load staticfiles %}
+      {% if not ninja_color %}
+      <img src="{% static 'disappearingninjas/images/tmnt.png' %}"><br>
+      {% endif %}
+      <a href="/ninjas/blue"><button>Leonardo</button></a>
+      <a href="/ninjas/orange"><button>Michelangelo</button></a>
+      <a href="/ninjas/purple"><button>Donatello</button></a>
+      <a href="/ninjas/red"><button>Raphael</button></a>
+      <br>
+      {% if ninja_color == 'blue' %}
+        <img src="{% static 'disappearingninjas/images/leonardo.jpg' %}">
+      {% elif ninja_color == 'orange' %}
+        <img src="{% static 'disappearingninjas/images/michelangelo.jpg' %}">
+      {% elif ninja_color == 'purple' %}
+        <img src="{% static 'disappearingninjas/images/donatello.jpg' %}">
+      {% elif ninja_color == 'red' %}
+        <img src="{% static 'disappearingninjas/images/raphael.jpg' %}">
+      {% elif wrong_color %}
+        <img src="{% static 'disappearingninjas/images/notapril.jpg' %}">
+      {% endif %}
+    </center>
+  </body>
+</html>

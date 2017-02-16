@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>THE WALL</title>
+    <link rel='stylesheet' type='text/css' href='static/style.css'>
+  </head>
+  <body>
+    <div id="navbar">
+      <h1>THE WALL</h1>
+      <div id="userdetail">
+      <h3>Welcome {{session.username}}</h3>
+      <form action='/logout' method='POST'>
+        <input type='submit' name='logout' value="LOGOUT">
+      </form>
+      </div>
+    </div>
+
+    <div id="wall">
+      <h2>POST A MESSAGE</h2>
+      <form action='/post_message' method='POST'>
+      <textarea name="message" rows="5" cols="150"></textarea>
+      <br>
+      <input type="submit" name="message" value="Post a message">
+      <br><br>
+      </form>
+      {% for message in messages %}
+      <div id="messages">
+        <b>{{message['first_name']}} {{message['last_name']}}</b>
+        <font color='#2C98BD'>{{message['date']}}</font>
+        <p>{{message['message']}}</p>
+        {% for comment in comments %}
+          {% if message.id == comment.message_id %}
+            <div id="comments">
+              <b>{{comment['first_name']}} {{comment['last_name']}}</b>
+              <font color='#2C98BD'>{{comment['date']}}</font>
+              <p>{{comment['comment']}}</p>
+              <form action='/delete_comment/{{comment.id}}' method='POST'>
+                {% if session.userid != comment.user_id %}
+                <input hidden type="submit" name="del_comment" value="Delete a comment">
+                {% else %}
+                <input type="submit" name="del_comment" value="Delete a comment">
+                {% endif %}
+              </form><br><br>
+            </div>
+          {% endif %}
+        {% endfor %}
+          <form action= '/post_comment/{{message.id}}' method='POST'>
+            <textarea name="commentbox" rows="5" cols="60" value=""></textarea><br>
+            <input type="submit" name="comment" value="Post a comment">
+          </form><br><br>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

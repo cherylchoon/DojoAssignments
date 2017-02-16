@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SUCCESS</title>
+  </head>
+  <body>
+    <style>
+      p {
+        color: white;
+        background-color: green;
+        font-family: Arial, sans-serif;
+        font-size: 1.2em;
+        border: 2px solid black;
+        width: 400px;
+      }
+      input[type='submit'] {
+        font-family: Arial, sans-serif;
+        font-size: 1.2em;
+        width: 320px;
+      }
+    </style>
+    <center>
+      <p>The email address you entered ({{session.user}}) is a VALID email address! Thank you!</p>
+      {% for email in all_emails: %}
+         <font color='red'>ID: {{email['id']}}</font> Email: {{email['email'] }} {{email['created_at']}} <br>
+      {% endfor %}
+      <br><br>
+      <form action='/delete_email' method='POST'>
+        <input type="submit" name="delete" value="Delete your email by filling in your ID on the right!">
+        <input type="text" name="emailid" value="">
+      </form>
+    </center>
+  </body>
+</html>

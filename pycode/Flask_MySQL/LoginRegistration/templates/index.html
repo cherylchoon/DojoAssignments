@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>REGISTRATION</title>
+    <style>
+      body {
+        font-family: Lucida Grande, monospace;
+      }
+      input[type=submit] {
+        color: white;
+        border: 0px;
+        background-color: black;
+        box-shadow: 2px 2px 2px grey;
+      }
+      #register {
+        margin-top: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='register'>
+    <center>
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for message in messages %}
+            <font color='red'>*{{message}}<br></font>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+      <h1>REGISTER HERE</h1>
+      <p>Or if you have an account, <a href='/login'>login here</a></p>
+      <br>
+      <form action='/register' method='POST'>
+        <label>First Name: </label><input type='text' name='firstname' value=''><br><br>
+        <label>Last Name: </label><input type='text' name='lastname' value=''><br><br>
+        <label>Email: </label><input type='text' name='email' value=''><br><br>
+        <label>Password: </label><input type='password' name='password' value=''><br><br>
+        <label>Password Confirmation: </label><input type='password' name='confirm' value=''><br><br>
+        <input type="submit" name="register" value="REGISTER"><br><br>
+    </center>
+  </div>
+  </body>
+</html>

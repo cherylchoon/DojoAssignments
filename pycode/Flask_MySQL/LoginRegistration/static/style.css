@@ -1,0 +1,61 @@
+body {
+  font-family: Lucida Grande, monospace;
+}
+#wall {
+  margin-left: 5%;
+}
+#messages {
+  width: 70%;
+  height: auto;
+}
+#navbar {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+#userdetail {
+  margin-right: 2%;
+  float: right;
+}
+#comments {
+  margin-left: 5%;
+  width: 50%
+}
+h1 {
+  margin-top: 2%;
+  display: inline-block;
+}
+h3 {
+  margin-top: 18%;
+  margin-bottom: 0px;
+  display: block;
+}
+p {
+  background-color: #83CCE5;
+  margin-bottom: 2%;
+}
+form {
+  display: inline-block;
+}
+input {
+  font-family: Tahoma, sans-serif;
+  border: 0px;
+
+}
+input[name=comment] {
+  color: white;
+  border: 0px;
+  background-color: #2C98BD;
+  box-shadow: 2px 2px 2px black;
+
+}
+input[name=message] {
+  color: white;
+  background-color: #2C98BD;
+  box-shadow: 2px 2px 2px black;
+  margin-left: 90%;
+}
+input[name=del_comment] {
+  color: white;
+  background-color: black;
+  box-shadow: 2px 2px 2px grey;
+}
